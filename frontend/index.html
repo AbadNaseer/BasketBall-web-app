@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Basketball App</title>
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0056b3;
+    }
+
+    section {
+      display: none;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    button {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Basketball App</h1>
+
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="#" class="nav-link" data-section="login">Login</a></li>
+        <li><a href="#" class="nav-link" data-section="signup">Sign Up</a></li>
+        <li><a href="#" class="nav-link" data-section="teams">Teams</a></li>
+        <li><a href="#" class="nav-link" data-section="players">Players</a></li>
+      </ul>
+    </nav>
+
+    <!-- Login Form -->
+    <section id="login">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" class="form-control" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+    </section>
+
+    <!-- Sign Up Form -->
+    <section id="signup">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <div class="form-group">
+          <label for="newUsername">Username:</label>
+          <input type="text" class="form-control" id="newUsername" name="newUsername" required>
+        </div>
+        <div class="form-group">
+          <label for="newPassword">Password:</label>
+          <input type="password" class="form-control" id="newPassword" name="newPassword" required>
+        </div>
+        <button type="submit" class="btn btn-success">Sign Up</button>
+      </form>
+    </section>
+
+    <!-- Team Management -->
+    <section id="teams">
+      <h2>Team Management</h2>
+      <button id="createTeam" class="btn btn-info">Create Team</button>
+      <!-- Team List will be displayed here -->
+    </section>
+
+    <!-- Player Management -->
+    <section id="players">
+      <h2>Player Management</h2>
+      <!-- Player List will be displayed here -->
+    </section>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
